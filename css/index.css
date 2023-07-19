@@ -1,0 +1,47 @@
+body{
+    font-family: 'Pacifico', cursive;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Righteous', cursive;
+background-color: hsl(60, 14%, 75%);
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+}
+
+.head-title::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: all 350ms;
+    z-index: -1;
+}
+.head-title:hover::before{
+    height: 50%;
+}
+
+
+/* /////content//////// */
+
+.content{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.content h2{
+font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.25rem #fec260;
+}
